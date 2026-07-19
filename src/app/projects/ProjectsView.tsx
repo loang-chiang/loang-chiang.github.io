@@ -21,12 +21,36 @@ export default function ProjectsView() {
 
   const projects: Project[] = [
     {
-      title: "PVDX WebApp",
-      highlight: "Educational app to spark love for space",
+      title: "Daytile",
+      highlight: "Your day as a mosaic",
       description:
-        "An educational platform enabling K–12 students to interact with upcoming PVDX satellite through live data updates and block coding. In collaboration with Brown Space Engineering.",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/pvdx.png`,
-      status: "in-progress",
+        "Mobile journaling app that turns your daily moments into a colorful tile mosaic. Features live camera capture, photo tiles, streaks, and memories. Built with React Native, Firebase, and Cloudinary.",
+        repo: "https://github.com/loang-chiang/Daytile",
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/daytile.png`,
+    },
+    {
+      title: "Epic Geometry",
+      highlight: "Deep Learning system for math diagrams",
+      description:
+        "TikZ geometry diagram generator benchmarking GPT-4o Mini, Claude Haiku, and a fine-tuned Qwen adapter on translating natural language into precise mathematical figures. Built for CSCI1470 Deep Learning.",
+      repo: "https://github.com/screechingviolet/epic-tikz-diagram-generator",
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/epicgeometry.png`,
+    },
+    {
+      title: "Ephemeral",
+      highlight: "Moments that fade away",
+      description:
+        "A social platform for sharing fleeting moments that disappear over time, exploring intentionality and impermanence in digital sharing.",
+      repo: "https://github.com/screechingviolet/ephemeral",
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/ephemeral.png`,
+    },
+    {
+      title: "WireChat",
+      highlight: "Chat app with X-ray vision",
+      description:
+        "WebSocket chat application with a live frame inspector that visualizes the protocol internals in real time as messages flow. Built for CSCI1680 Computer Networks.",
+      repo: "https://github.com/brown-cs1680-s26/final-hayzie-loang-final",
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/wirechat.png`,
     },
     {
       title: "Arcademia",
@@ -147,7 +171,6 @@ export default function ProjectsView() {
     </>
   );
 }
-
 
 
 

@@ -9,7 +9,6 @@ import { usePalette } from "@/components/PaletteProvider";
 import SectionCard from "@/components/SectionCard";
 import Timeline, { TimelineItem } from "@/components/Timeline";
 import ChipList from "@/components/ChipList";
-import CoursesSection, { Course } from "@/components/CoursesSection";
 import Footer from "@/components/Footer";
 
 export default function AboutView() {
@@ -38,83 +37,55 @@ export default function AboutView() {
   // ----- data -----
   const exp: TimelineItem[] = [
     {
-      title: "Strategy & Analytics Intern — BCP",
-      sub: "Cybersecurity Governance",
-      period: "Summer 2025",
-      bullets: [
-        "Joined the Summer Trainees program at Peru’s largest bank on the Cybersecurity Governance team.",
-        "Designed and shipped a Power BI maturity dashboard used by 40+ executives and specialists.",
-        "Built Python jobs to map evidence across NIST/CIS/ISO controls and unify reporting.",
-        "Automated Excel-to-cloud workflows with Power Automate, cutting turnaround time.",
-      ],
+      title: "IBM",
+      sub: "Solutions Engineering Intern",
+      period: "Summer 2026",
+      summary:
+        "Designing and building AI and automation solutions for enterprise clients across industries like finance, telecommunications, and energy, from market research and use case development to technical prototyping and executive presentations.",
     },
     {
-      title: "Sin-cere Consulting & Multiservices",
-      sub: "Product Design & Development Intern",
-      period: "Fall 2025",
-      bullets: [
-        "Built a mobile-first intake/onboarding prototype to digitize client intake across RI.",
-        "Partnered with program staff to add sign-ups, scheduling, and notifications.",
-        "Ran usability tests with entrepreneurs; iterated flows to improve accessibility and completion.",
-      ],
+      title: "Providence Preservation Society",
+      sub: "Product & Data Systems Intern",
+      period: "Spring 2026",
+      summary:
+        "Leading product and data decisions for a public-facing historical platform, from information architecture and UX to data quality workflows for 1,000+ digitized records.",
+    },
+    {
+      title: "Meroo",
+      sub: "Technical Product Development Intern",
+      period: "Winter 2026",
+      summary:
+        "Designed and prototyped an AI agent that generates career-specific learning paths for the platform, owning the build end-to-end from requirements to iterative testing.",
+    },
+    {
+      title: "BCP Financial Services",
+      sub: "Analytics & Automation Intern",
+      period: "Summer 2025",
+      summary:
+        "Built Power BI dashboards and Python automation workflows for cybersecurity compliance, delivering insights to 40+ executives and specialists and cutting hundreds of hours of manual work.",
     },
     {
       title: "Providence Public Library",
       sub: "Data Analytics Intern",
       period: "Spring 2025",
-      bullets: [
-        "Collaborated with PPL and Brown’s CEDEC on fundraising analytics and planning.",
-        "Analyzed donor and membership trends to surface high-potential segments.",
-        "Delivered Python visualizations and briefed leadership; insights informed strategy.",
-      ],
-    },
-    {
-      title: "Brown Human-Computer Interaction Lab",
-      sub: "Undergraduate Research Assistant",
-      period: "Fall 2025",
-      bullets: [
-        "Built Python pipelines for Sochiatrist, an app to process social-messaging datasets.",
-        "Created Plotly dashboards to reveal behavioral patterns for researchers.",
-        "Translated findings into recommendations for studies and mental-health tech.",
-      ],
+      summary:
+        "Analyzed 15+ years of donor data in Python to surface overlooked fundraising opportunities, presenting recommendations directly to library leadership.",
     },
     {
       title: "Brown University Department of Computer Science",
-      sub: "Undergraduate Teaching Assistant — CS300: Intro to Computer Systems",
-      period: "Fall 2025",
-      bullets: [
-        "TA for the first Fall offering of Brown’s largest systems course!",
-        "Led weekly sections of 30+; clarified pointers, memory, and processes with examples.",
-        "Provided targeted debugging support during office hours to build confidence.",
-      ],
+      sub: "Undergraduate Teaching Assistant",
+      period: "2025 – present",
+      summary:
+        "Fall 2025: CSCI0300 Introduction to Computer Systems. Fall 2026: CSCI1302 Sociotechnical Approaches to AI and HCI.",
     },
   ];
 
   const highlights = [
-    "Carpool UP — Product Strategy & Frontend Design Lead",
-    "Brown Space Engineering — Software Dev & PM Associate",
-    "Brown Women in Computer Science — Co-Development Lead",
-    "Anime Video Game Ensemble — Logistics Lead",
-    "FullStack @ Brown — Software Engineer",
-    "IgniteCS Artemis Project — Programming Tutor",
-    "Meiklejohn Peer Advisor",
-    "Bonner Community Fellow Class of '28",
-  ];
-
-  // New flat courses list (no terms)
-  const courses: Course[] = [
-    { code: "CSCI 0190", name: "Accelerated Intro to CS", category: "CS" },
-    { code: "DATA 0150", name: "Data Science Princples", category: "CS" },
-    { code: "MATH 0190", name: "Calculus II", category: "Math" },
-    { code: "LING 0100", name: "Intro to Linguistics", category: "CogSci" },
-    { code: "APMA1650", name: "Statistical Inference", category: "Math" },
-    { code: "CSCI0410", name: "Intro to AI", category: "CS" },
-    { code: "CSCI0300", name: "Fundamentals of Computer Systems", category: "CS" },
-    { code: "MATH0540", name: "Linear Algebra with Theory", category: "Math" },
-    { code: "CSCI1302", name: "Sociotechnical Systems and HCI", category: "CS" },
-    { code: "CSCI0500", name: "Data Structures and Algorithms", category: "CS" },
-    { code: "CPSY0800", name: "Language and the Mind", category: "CogSci" },
-    { code: "ENGN0090", name: "Management of Industrial Organizations", category: "Other" },
+    "Notion Campus Leader",
+    "Brown WiCS Development Chair",
+    "CS DUG EBoard",
+    "FullStack@Brown Software Engineer",
+    "AVGE Logistics Chair",
   ];
 
   return (
@@ -181,25 +152,25 @@ export default function AboutView() {
                   </span>
                 </h1>
                 <p className="mt-4 opacity-80">
-                  I'm a second-year student at Brown University studying Computer Science and Cognitive Science with a passion for creating
-                  technology that connects people and helps solve real problems!
+                  I'm a third-year student at Brown University studying Computer Science and Behavioral Decision Sciences,
+                  passionate about building products that connect people and solve real problems.
                 </p>
                 <p className="mt-4 opacity-80">
-                  My interests span product, engineering, and human-computer interaction, where I get to blend technical skills with creativity and design.
-                  I’m excited to collaborate, learn from others, and build products that make an impact!
+                  My interests span product, software engineering, and human-computer interaction. If there's anything I love, it's blending technical skills with
+                  creativity and design!
                 </p>
                 <ul className="mt-5 grid gap-2 text-sm">
-                  <li>• <b>Programming:</b> Python, JavaScript (React), SQL, C/C++</li>
-                  <li>• <b>Tools:</b> Power BI, Tableau, Power Automate, Excel, Git, Figma, Trello/Jira</li>
-                  <li>• <b>Languages:</b> English & Spanish (Bilingual)</li>
-                  <li>• <b>Interests:</b> Literature, choir, theater, productivity tools</li>
+                  <li>• <b>Product:</b> User Research, Product Discovery, Prioritization, Roadmaps, Prototyping, Usability Testing, UI/UX Design</li>
+                  <li>• <b>Programming:</b> Python, C/C++, JavaScript/TypeScript, SQL</li>
+                  <li>• <b>Frameworks & Tools:</b> React, Node.js, FastAPI, Git, Power BI, Docker, Figma, Linear, Notion</li>
+                  <li>• <b>Languages & Interests:</b> English & Spanish · Literature, Fiction Writing, Theater, Human-Centered Technology</li>
                 </ul>
               </div>
             </div>
           </section>
 
           {/* Experience + Highlights */}
-          <section className="mt-16 grid gap-8 lg:grid-cols-12">
+          <section className="mt-16 mb-12 grid gap-8 lg:grid-cols-12">
             <SectionCard
               title="Experience"
               accent={p.accent}
@@ -212,7 +183,7 @@ export default function AboutView() {
             </SectionCard>
 
             <SectionCard
-              title="Highlights"
+              title="Activities"
               accent={p.accent}
               cardClass={p.card}
               cardBorderClass={p.cardBorder}
@@ -222,21 +193,6 @@ export default function AboutView() {
               <ChipList items={highlights} accent={p.accent} size="md" columns={1} />
             </SectionCard>
           </section>
-
-          {/* Courses (no dates, color-coded by category) */}
-          <div className="mt-8 mb-12">
-            <CoursesSection
-                title="Courses"
-                courses={courses}
-                accent={p.accent}
-                cardClass={p.card}
-                cardBorderClass={p.cardBorder}
-                paletteColors={p.colors}
-                style={cardTint}
-                innerSurface={innerSurface}
-                cols={2}
-            />
-          </div>
 
         </motion.main>
 

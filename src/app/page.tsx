@@ -155,7 +155,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg opacity-80">
-              Computer Science and Cognitive Science student at Brown University
+              Computer Science and Behavioral Decision Sciences student at Brown University
             </p>
 
             <motion.div
